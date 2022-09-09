@@ -9,15 +9,14 @@
                             <img src="../assets/images/logo.png" />
                         </a>
                     </div>
-                    <figcaption class="pt-[18px]"><span>EMAIL:</span> <a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)] text-[#80d4ff]">CONTACT@DRIVINGPLATES.COM</a></figcaption>
-                    <figcaption class="white-space-pre-wrap">PHONE: 323.800.2466</figcaption>
+                    <figcaption class="pt-[18px] text-[12px] whitespace-pre-wrap leading-6"><span>EMAIL:</span> <a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)] text-[#80d4ff]">CONTACT@DRIVINGPLATES.COM</a></figcaption>
+                    <figcaption class="whitespace-pre-wrap">PHONE: 323.800.2466</figcaption>
                 </figure>
                 <div class="sm:w-[30%] text-white pt-[18px] sm:pt-0">
                     <h3 class="whitespace-pre-wrap text-[#80d4ff] text-[10px] uppercase leading-4 tracking-[0.26rem] font-medium font-['Heebo']"><a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)]">ABOUT</a> | <a href="https://library.drivingplates.com" class="border-b-[1px] border-[rgba(128,212,255,.3)]">LIBRARY</a> | <a href="/contact" class="border-b-[1px] border-[rgba(128,212,255,.3)]">CONTACT</a> | <a href="/news" class="border-b-[1px] border-[rgba(128,212,255,.3)]">BLOG</a> | <a href="/faq" class="border-b-[1px] border-[rgba(128,212,255,.3)]">FAQ</a> | <a href="https://vimeo.com/578517986" target="_blank" class="border-b-[1px] border-[rgba(128,212,255,.3)]">Demo</a></h3>
                     <nav class="flex justify-center pt-[18px]">
                         <a href="http://www.youtube.com/channel/UCCulGI986t_GquAJVq8eS6w" target="_blank" class="w-8 h-[1.6rem] border-2 border-white box-border mx-1 rounded-md grid place-items-center" aria-label="Driving Plates">
                             <i class="fa-brands fa-youtube relative left-[1.5px]"></i>
-                            
                         </a>
                         <a href="https://vimeo.com/161942412" target="_blank" class="w-8 h-[1.6rem] border-2 border-white box-border mx-1 rounded-md grid place-items-center relative left-[1.75px]" aria-label="Driving Plates">
                             <i class="fa-brands fa-vimeo-v relative left-[1.5px]"></i>
@@ -35,12 +34,17 @@
                 </div>
                 <div class="sm:w-[30%]"></div>
             </div>
-            <nav class="flex justify-center font-['Heebo'] font-[100] text-[12px] leading-6 uppercase sm:tracking-[0.29rem] py-16">
+            <!-- footer nav -->
+            <nav class="flex justify-center font-['Heebo'] font-[100] text-[12px] leading-6 uppercase sm:tracking-[0.29rem] pb-8 pt-10">
                 <a href="/terms-of-service" class="text-[#80d4ff]">Terms of Service | </a>
                 <a href="/return-policy" class="text-[#80d4ff]">Return Policy | </a>
                 <a href="/privacy-policy" class="text-[#80d4ff]">Privacy Policy | </a>
                 <a href="/license" class="text-[#80d4ff]">License Agreement</a>
             </nav>
+            <div class="font-['Heebo'] font-[100] text-[10px] text-[#80d4ff] leading-6 uppercase sm:tracking-[0.29rem]">
+                <h3 class="text-center font-medium">© Copyright 2011-2022 - DrivingPlates.com, LLC</h3>
+                <h3 class="text-center mt-[15px] font-medium">Drivingplates.com® and the DRIVING PLATES logo® are trade marks of Drivingplates.com, LLC registered in the US and UK respectively</h3>
+            </div>
         </div>
     </footer>
 </template>
