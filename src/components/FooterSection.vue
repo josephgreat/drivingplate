@@ -35,7 +35,7 @@
                 <div class="sm:w-[30%]"></div>
             </div>
             <!-- footer nav -->
-            <nav class="flex justify-center font-['Heebo'] font-[100] text-[12px] leading-6 uppercase sm:tracking-[0.29rem] pb-8 pt-10">
+            <nav class="text-center font-['Heebo'] font-[100] text-[12px] leading-6 uppercase sm:tracking-[0.29rem] pb-8 pt-10">
                 <a href="/terms-of-service" class="text-[#80d4ff]">Terms of Service | </a>
                 <a href="/return-policy" class="text-[#80d4ff]">Return Policy | </a>
                 <a href="/privacy-policy" class="text-[#80d4ff]">Privacy Policy | </a>
