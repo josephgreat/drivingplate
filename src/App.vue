@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <navbar/>
+  <div class="min-h-[150vh]">
+    <jumbotron />
+    <page-body/>
   </div>
-
 </template>
 
 <script setup>
-
-import Navbar from './components/Navbar.vue';
-
+import Jumbotron from "./components/Jumbotron.vue";
+import PageBody from "./components/PageBody.vue";
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
