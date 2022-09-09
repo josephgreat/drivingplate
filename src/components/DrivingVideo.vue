@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-24">
+  <section class="pb-28">
     <div class="relative">
       <img
         data-src="https://images.squarespace-cdn.com/content/v1/50fb213fe4b0499abb0325a0/1407825273560-PSI9V5H6T7HXQNYDM6NF/Screen+Shot+2014-08-11+at+11.33.47+PM.png"

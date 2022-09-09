@@ -6,7 +6,7 @@
     <div class="flex justify-end px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 2xl:max-w-[1700px] 2xl:mx-auto">
       <a
         href="#"
-        class="text-white border-2 text-[10px] uppercase font-bold tracking-[.3rem] px-[25px] py-[18px] sm:px-[34px] block sm:py-[21px] border-white hover:bg-white transition duration-3000 ease-linear hover:text-[#191606] group-hover:"
+        class="text-white border-2 text-[10px] uppercase font-bold tracking-[.3rem] px-[25px] py-[12px] block border-white hover:bg-white transition duration-3000 ease-linear hover:text-[#191606] group-hover:"
       >
         find footage
       </a>
