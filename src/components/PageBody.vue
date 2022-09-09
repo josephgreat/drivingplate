@@ -5,17 +5,20 @@
     <Headline />
     <DrivingVideo />
     <Features />
+    <Slider />
   </main>
 </template>
 <script>
 import Headline from "./Headline.vue";
 import DrivingVideo from "./DrivingVideo.vue";
 import Features from "./Features.vue";
+import Slider from "./Slider.vue";
 export default {
   components: {
     Headline,
     DrivingVideo,
-    Features
+    Features,
+    Slider
 },
 };
 </script>
