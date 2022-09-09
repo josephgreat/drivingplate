@@ -5,7 +5,7 @@
     <a href="#" class="w-1/4">
       <img src="../assets/images/logo.png" />
     </a>
-    <nav>
+    <nav class="text-[13px]">
       <button class="sm:hidden" @click="toggleNavbar = !toggleNavbar">
         <i class="fas fa-bars text-white"></i>
       </button>

@@ -1,19 +1,29 @@
 <template>
     <footer class="bg-[#000]">
         <div class="px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:xl:px-0 py-8 sm:py-20">
-            <p class="flex justify-center text-[#80d4ff] whitespace-pre text-md py-8 font-['Armata'] leading-8 tracking-[0.2rem] font-normal "><a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)]">Los Angeles</a> | <a href="https://www.DrivingPlates.co.uk" class="border-b-[1px] border-[rgba(128,212,255,.3)]">London</a></p>
+            <p class="flex justify-center text-[#80d4ff] whitespace-pre text-md pt-8 pb-16 sm:py-8 font-['Armata'] leading-8 tracking-[0.2rem] font-normal "><a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)]">Los Angeles</a> | <a href="https://www.DrivingPlates.co.uk" class="border-b-[1px] border-[rgba(128,212,255,.3)]">London</a></p>
             <div class="flex flex-col sm:flex-row flex-wrap justify-between">
+                <!-- mobile -->
                 <figure class="sm:w-[30%] text-white">
                     <div class="">
                         <a href="#" class="">
                             <img src="../assets/images/logo.png" />
                         </a>
                     </div>
-                    <figcaption class="pt-[18px] text-[12px] whitespace-pre-wrap leading-6"><span>EMAIL:</span> <a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)] text-[#80d4ff]">CONTACT@DRIVINGPLATES.COM</a></figcaption>
-                    <figcaption class="whitespace-pre-wrap">PHONE: 323.800.2466</figcaption>
+                    <figcaption class="pt-[18px] text-[12px] whitespace-pre-wrap leading-6 email-wrap"><span>EMAIL:</span> <a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)] text-[#80d4ff]">CONTACT@DRIVINGPLATES.COM</a></figcaption>
+                    <figcaption class="whitespace-pre-wrap pt-4 sm:pt-0 text-[12px]">PHONE: 323.800.2466</figcaption>
                 </figure>
                 <div class="sm:w-[30%] text-white pt-[18px] sm:pt-0">
-                    <h3 class="whitespace-pre-wrap text-[#80d4ff] text-[10px] uppercase leading-4 tracking-[0.26rem] font-medium font-['Heebo']"><a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)]">ABOUT</a> | <a href="https://library.drivingplates.com" class="border-b-[1px] border-[rgba(128,212,255,.3)]">LIBRARY</a> | <a href="/contact" class="border-b-[1px] border-[rgba(128,212,255,.3)]">CONTACT</a> | <a href="/news" class="border-b-[1px] border-[rgba(128,212,255,.3)]">BLOG</a> | <a href="/faq" class="border-b-[1px] border-[rgba(128,212,255,.3)]">FAQ</a> | <a href="https://vimeo.com/578517986" target="_blank" class="border-b-[1px] border-[rgba(128,212,255,.3)]">Demo</a></h3>
+                    <!-- footer menu -->
+                    <h3 class="whitespace-pre-wrap text-[#80d4ff] text-[10px] pb-4 sm:pb-0 uppercase leading-6 tracking-[0.26rem] font-medium font-['Heebo'] text-center">
+                        <a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)]">ABOUT</a> | 
+                        <a href="https://library.drivingplates.com" class="border-b-[1px] border-[rgba(128,212,255,.3)]">LIBRARY</a> | 
+                        <a href="/contact" class="border-b-[1px] border-[rgba(128,212,255,.3)]">CONTACT</a> | 
+                        <a href="/news" class="border-b-[1px] border-[rgba(128,212,255,.3)]">BLOG</a> | 
+                        <a href="/faq" class="border-b-[1px] border-[rgba(128,212,255,.3)]">FAQ</a> | 
+                        <a href="https://vimeo.com/578517986" target="_blank" class="border-b-[1px] border-[rgba(128,212,255,.3)]">Demo</a>
+                    </h3>
+                    <!-- social media links -->
                     <nav class="flex justify-center pt-[18px]">
                         <a href="http://www.youtube.com/channel/UCCulGI986t_GquAJVq8eS6w" target="_blank" class="w-8 h-[1.6rem] border-2 border-white box-border mx-1 rounded-md grid place-items-center" aria-label="Driving Plates">
                             <i class="fa-brands fa-youtube relative left-[1.5px]"></i>
@@ -35,7 +45,7 @@
                 <div class="sm:w-[30%]"></div>
             </div>
             <!-- footer nav -->
-            <nav class="flex justify-center font-['Heebo'] font-[100] text-[12px] leading-6 uppercase sm:tracking-[0.29rem] pb-8 pt-10">
+            <nav class="text-center font-['Heebo'] font-[100] text-[12px] leading-6 uppercase sm:tracking-[0.29rem] pb-8 pt-10">
                 <a href="/terms-of-service" class="text-[#80d4ff]">Terms of Service | </a>
                 <a href="/return-policy" class="text-[#80d4ff]">Return Policy | </a>
                 <a href="/privacy-policy" class="text-[#80d4ff]">Privacy Policy | </a>
@@ -48,3 +58,9 @@
         </div>
     </footer>
 </template>
+
+<style scoped>
+.email-wrap {
+    overflow-wrap: break-word;
+}
+</style>
