@@ -3,7 +3,7 @@
     <Carousel :autoplay="2000" :wrap-around="true" :settings="settings">
       <Slide v-for="n in 25" :key="n">
         <div class="carousel_item h-full">
-          <img class="h-full" :src="`/src/assets/images/slide${n}.jpg`" />
+          <img class="h-full" :src="`../src/assets/images/slide${n}.jpg`" loading='lazy'/>
         </div>
       </Slide>
       <template #addons>
