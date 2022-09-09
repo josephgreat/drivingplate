@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="pb-28">
     <Carousel :autoplay="2000" :wrap-around="true" :settings="settings">
       <Slide v-for="n in 25" :key="n">
         <div class="carousel_item h-full">
