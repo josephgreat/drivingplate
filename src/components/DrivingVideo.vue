@@ -1,10 +1,6 @@
 <template>
   <section class="pb-28">
     <div v-if="playVideo" class="iframe-container">
-      <!-- <video width="1000" height="360" controls>
-        <source src="https://player.vimeo.com/video/315795892?app_id=122963&wmode=opaque&autoplay=1" type="video/mp4">
-        Your browser does not support the video tag.
-      </video> -->
       <iframe class="responsive-iframe" src="https://player.vimeo.com/video/315795892?app_id=122963&wmode=opaque&autoplay=1" title="driving video" allow="fullscreen; autoplay" allowfullscreen></iframe>
     </div>
     <div class="relative" v-else>
