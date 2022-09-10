@@ -2,10 +2,10 @@
   <section class="pb-12 md:pb-24">
 
     <div class="flex items-center">
-      <div class="w-[10%] sm:w-[15%] md:w-[20%] lg:w-[25%]">
+      <div class="w-[100%] sm:w-[15%] md:w-[20%] lg:w-[25%]">
         <hr>
       </div>
-      <div class="relative w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] md:m-6 h-20">
+      <div class="relative w-[100%] sm:w-[70%] md:w-[60%] lg:w-[50%] md:m-6 h-20">
         <figure class="review transition duration-300 ease-linear absolute w-full top-0 md:-top-8 left-1/2 -translate-x-1/2">
           <img
             class="thumb-image loaded"
@@ -78,7 +78,7 @@
           />
         </figure>
       </div>
-      <div class="w-[10%] sm:w-[15%] md:w-[20%] lg:w-[25%]">
+      <div class="w-[100%] sm:w-[15%] md:w-[20%] lg:w-[25%]">
         <hr>
       </div>
     </div>

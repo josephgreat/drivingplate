@@ -1,15 +1,16 @@
 <template>
-  <section class="jumbotron relative pb-5 min-h-[60vh]">
+
+  <section id="bg-container" class="jumbotron">
     <iframe
       id="vimeoplayer"
       src="//player.vimeo.com/video/434167988?api=1&amp;background=1"
-      class="absolute -top-14 left-0 min-w-full min-h-full -z-20"
+      class="fixed -z-20"
     ></iframe>
     <div class="overlay absolute top-0 left-0 bg-[rgba(20,20,20,.4)]"></div>
     <navbar />
     <div class="h-[25vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh]"></div>
     <div
-      class="flex justify-end px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 2xl:max-w-[1700px] 2xl:mx-auto"
+      class="flex justify-end px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 py-4 2xl:max-w-[1700px] 2xl:mx-auto"
     >
       <a
         href="#"
@@ -30,5 +31,54 @@ import Navbar from "./Navbar.vue";
 iframe {
   background-color: #7e3a3a;
   
+}
+#bg-container {
+  overflow: hidden;
+}
+#vimeoplayer {
+  width: 680px;
+  height: calc(25vh + 150px);
+  left: -20px;
+}
+
+@media screen and (min-width: 640px) {
+  #vimeoplayer {
+    width: 1150px;
+    height: calc(57vh + 200px);
+    top: -7vh;
+    left: -20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #vimeoplayer {
+    width: 1400px;
+    height: calc(72vh + 200px);
+    top: -12vh;
+    left: -20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #vimeoplayer {
+    width: 1400px;
+    height: calc(72vh + 200px);
+    top: -12vh;
+    left: -55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #vimeoplayer {
+    width: 1400px;
+    height: calc(72vh + 200px);
+    top: -12vh;
+    left: -55px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #vimeoplayer {
+    width: 110vw;
+    /* height: calc(72vh + 200px); */
+    top: -10vh;
+    left: 0;
+  }
 }
 </style>
