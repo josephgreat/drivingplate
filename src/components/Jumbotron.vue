@@ -1,6 +1,5 @@
 <template>
-
-  <section id="bg-container" class="jumbotron">
+   <section id="bg-container" class="jumbotron">
     <div class="fixed video">
       <video autoplay muted loop class="max-w-none">
         <source src="../../public/video/diving.mp4" type="video/mp4" />
