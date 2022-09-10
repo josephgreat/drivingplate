@@ -1,12 +1,12 @@
 <template>
   <section class="pb-12 md:pb-24">
 
-    <div class="flex items-center">
+    <div class="flex items-center flex-col gap-4 sm:flex-row">
       <div class="w-[100%] sm:w-[15%] md:w-[20%] lg:w-[25%]">
         <hr>
       </div>
-      <div class="relative w-[100%] sm:w-[70%] md:w-[60%] lg:w-[50%] md:m-6 h-20">
-        <figure class="review transition duration-300 ease-linear absolute w-full top-0 md:-top-8 left-1/2 -translate-x-1/2">
+      <div class="relative w-[100%] sm:w-[70%] md:w-[60%] lg:w-[50%] md:m-6 pb-[28.5%]">
+        <figure class="review transition duration-300 ease-linear absolute w-full top-0 sm:top-1/4 left-1/2 -translate-x-1/2">
           <img
             class="thumb-image loaded"
             data-src="https://images.squarespace-cdn.com/content/v1/50fb213fe4b0499abb0325a0/1503022377779-MLGVPDVHBQ9ALKTVAIBC/Big+Dogs.jpg"
@@ -24,7 +24,7 @@
           />
         </figure>
   
-        <figure class="review transition duration-300 ease-linear absolute w-full top-0 md:-top-8 left-1/2 -translate-x-1/2">
+        <figure class="review transition duration-300 ease-linear absolute w-full top-0 sm:top-1/4 left-1/2 -translate-x-1/2">
           <img
             class="thumb-image loaded"
             data-src="https://images.squarespace-cdn.com/content/v1/50fb213fe4b0499abb0325a0/1503022377835-O3X6HUPJOI9D4PDP8MHK/Blindspot.jpg"
@@ -42,7 +42,7 @@
           />
         </figure>
   
-        <figure class="review transition duration-300 ease-linear absolute w-full top-0 md:-top-8 left-1/2 -translate-x-1/2">
+        <figure class="review transition duration-300 ease-linear absolute w-full top-0 sm:top-1/4 left-1/2 -translate-x-1/2">
           <img
             class="thumb-image loaded"
             data-src="https://images.squarespace-cdn.com/content/v1/50fb213fe4b0499abb0325a0/1503022377971-BBLNY40KYR5MF9U7ZV46/Empire.jpg"
@@ -60,7 +60,7 @@
           />
         </figure>
   
-        <figure class="review transition duration-300 ease-linear absolute w-full top-0 md:-top-8 left-1/2 -translate-x-1/2">
+        <figure class="review transition duration-300 ease-linear absolute w-full top-0 sm:top-1/4 left-1/2 -translate-x-1/2">
           <img
             class="thumb-image loaded"
             data-src="https://images.squarespace-cdn.com/content/v1/50fb213fe4b0499abb0325a0/1503022378197-OT7BVZK3274HLTVXFM79/The+Commuter.jpg"

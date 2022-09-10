@@ -1,14 +1,14 @@
 <template>
 
   <section id="bg-container" class="jumbotron">
-    <iframe
-      id="vimeoplayer"
-      src="//player.vimeo.com/video/434167988?api=1&amp;background=1"
-      class="fixed -z-20"
-    ></iframe>
+    <div class="fixed video">
+      <video autoplay muted loop class="max-w-none">
+        <source src="../../public/video/diving.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="overlay absolute top-0 left-0 bg-[rgba(20,20,20,.4)]"></div>
     <navbar />
-    <div class="h-[25vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh]"></div>
+    <div class="h-[25vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh] xl:h-[55vh] 2xl:h-[50vh]"></div>
     <div
       class="flex justify-end px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 py-4 2xl:max-w-[1700px] 2xl:mx-auto"
     >
@@ -28,9 +28,16 @@ import Navbar from "./Navbar.vue";
 .jumbotron {
   font-family: "Heebo", Arial, Helvetica, sans-serif;
 }
-iframe {
+.video {
   background-color: #7e3a3a;
-  
+  background: url("../../public/video/video-palceholder.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 100%;
+  width: auto;
+  min-height: 80vh;
+  z-index: -1;  
 }
 #bg-container {
   overflow: hidden;
