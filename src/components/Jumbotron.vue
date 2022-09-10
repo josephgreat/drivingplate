@@ -1,11 +1,5 @@
 <template>
-
-  <section id="bg-container" class="jumbotron">
-    <iframe
-      id="vimeoplayer"
-      src="//player.vimeo.com/video/434167988?api=1&amp;background=1"
-      class="fixed -z-20"
-    ></iframe>
+<section id="bg-container" class="jumbotron">
     <div class="overlay absolute top-0 left-0 bg-[rgba(20,20,20,.4)]"></div>
     <navbar />
     <div class="h-[25vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh]"></div>
