@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-[#000]">
         <div class="px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 max-w-[1700px] mx-auto py-8 sm:py-20">
-            <p class="flex justify-center text-[#80d4ff] whitespace-pre text-md pt-8 pb-16 sm:py-8 font-['Armata'] leading-8 tracking-[0.2rem] font-normal "><a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)]">Los Angeles</a> | <a href="https://www.DrivingPlates.co.uk" class="border-b-[1px] border-[rgba(128,212,255,.3)]">London</a></p>
+            <p class="flex justify-center text-[#80d4ff] whitespace-pre text-md pt-8 pb-36 sm:py-8 font-['Armata'] leading-8 tracking-[0.2rem] font-normal "><a href="/about-driving-plates" class="border-b-[1px] border-[rgba(128,212,255,.3)]">Los Angeles</a> | <a href="https://www.DrivingPlates.co.uk" class="border-b-[1px] border-[rgba(128,212,255,.3)]">London</a></p>
             <div class="flex flex-col sm:flex-row flex-wrap justify-between">
                 <!-- mobile -->
                 <figure class="sm:w-[30%] text-white">
