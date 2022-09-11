@@ -1,13 +1,12 @@
 <template>
-   <section id="bg-container" class="jumbotron">
+  <section id="bg-container" class="jumbotron">
     <div class="fixed video-container">
-      <video autoplay muted loop class="video">
-        <source src="/video/diving.mp4" type="video/mp4" />
-      </video>
+      <iframe
+        src="https://player.vimeo.com/video/434167988?background=1&autoplay=1&loop=1&byline=0&title=0"
+      ></iframe>
     </div>
-    <div class="overlay absolute top-0 left-0 bg-[rgba(20,20,20,.4)]"></div>
     <navbar />
-    <div class="h-[25vh] sm:h-[40vh] md:h-[50vh] xl:h-[55vh] 2xl:h-[50vh]"></div>
+    <div style="padding-bottom: 25.6312%">&nbsp;</div>
     <div
       class="flex justify-end px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 py-4 2xl:max-w-[1700px] 2xl:mx-auto"
     >
@@ -21,42 +20,59 @@
   </section>
 </template>
 <script setup>
-import Navbar from "./Navbar.vue";
+import Navbar from './Navbar.vue';
 </script>
 <style scoped>
 .jumbotron {
-  font-family: "Heebo", Arial, Helvetica, sans-serif;
+  font-family: 'Heebo', Arial, Helvetica, sans-serif;
 }
 .video-container {
   background-color: #7e3a3a;
-  min-width: 100%;
-  width: auto;
-  min-height: 80vh;
-  z-index: -1;  
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.video-container iframe {
+  width: 4627.2px;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .video {
-  max-width: 800px;
-  background: url("/video/video-palceholder.png");
+  /* max-width: 800px; */
+  width: 100%;
+  height: auto;
+  background: url('/video/video-palceholder.png');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 @media screen and (min-width: 640px) {
   .video {
-    max-width: 1200px;
+    /* max-width: 1200px; */
   }
 }
 @media screen and (min-width: 768px) {
   .video {
-    max-width: 1400px;
+    /* max-width: 1400px; */
   }
 }
 @media screen and (min-width: 1100px) {
   .video {
     max-width: none;
-    width: 100vw;
+    /* width: 100vw; */
   }
 }
 </style>
