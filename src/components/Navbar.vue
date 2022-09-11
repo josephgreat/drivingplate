@@ -5,11 +5,12 @@
     <a href="#" class="w-1/4">
       <img src="../assets/images/logo.png" />
     </a>
-    <nav class="text-[13px] font-medium tracking-[0.25] leading-7">
+    <nav
+      class="text-[20px] sm:text-[13px] font-medium tracking-[0.25] leading-7"
+    >
       <button class="sm:hidden" @click="toggleNavbar = !toggleNavbar">
         <i class="fas fa-bars text-white"></i>
       </button>
-      <!-- mobile -->
       <div v-if="toggleNavbar">
         <div
           @click="toggleNavbar = !toggleNavbar"
@@ -24,11 +25,31 @@
         <ul
           class="flex flex-col animate-[slidein_.3s_ease-in-out] transition-all duration-300 ease-in-out sm:flex-row p-9 sm:p-0 h-screen sm:h-auto w-[85vw] sm:w-auto bg-[#191606] sm:bg-transparent right-0 top-0 absolute sm:relative text-white uppercase"
         >
-          <li class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"><a href="#">library</a></li>
-          <li class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"><a href="#">news</a></li>
-          <li class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"><a href="#">faq</a></li>
-          <li class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"><a href="#">contact</a></li>
-          <li class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"><a href="#">home</a></li>
+          <li
+            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+          >
+            <a href="#">library</a>
+          </li>
+          <li
+            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+          >
+            <a href="#">news</a>
+          </li>
+          <li
+            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+          >
+            <a href="#">faq</a>
+          </li>
+          <li
+            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+          >
+            <a href="#">contact</a>
+          </li>
+          <li
+            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+          >
+            <a href="#">home</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -44,23 +65,33 @@ export default {
   },
   mounted() {
     this.isMobile();
-    window.addEventListener("resize", this.isMobile, {passive: true})
+    window.addEventListener('resize', this.isMobile, { passive: true });
   },
   methods: {
     isMobile() {
-     (window.innerWidth < 640) ? this.toggleNavbar = false : this.toggleNavbar = true;
-    }
-  }
+      window.innerWidth < 640
+        ? (this.toggleNavbar = false)
+        : (this.toggleNavbar = true);
+    },
+  },
 };
 </script>
 
 <style \>
 @keyframes slidein {
-  from{right: -100%}
-  to{right: 0}
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
 }
 @keyframes fadein {
-  from{opacity: .5}
-  to{opacity: 1}
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
