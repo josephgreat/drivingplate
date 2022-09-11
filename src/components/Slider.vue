@@ -29,7 +29,6 @@ export default {
       settings: {
         itemsToShow: 5,
         snapAlign: 'center',
-        autoplay: false,
       },
     };
   },
