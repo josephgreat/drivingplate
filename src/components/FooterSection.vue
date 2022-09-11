@@ -24,20 +24,20 @@
                         <a href="https://vimeo.com/578517986" target="_blank" class="border-b-[1px] border-[rgba(128,212,255,.3)]">Demo</a>
                     </h3>
                     <!-- social media links -->
-                    <nav class="flex justify-center pt-[18px]">
-                        <a href="http://www.youtube.com/channel/UCCulGI986t_GquAJVq8eS6w" target="_blank" class="w-10 h-[2.1rem] border-2 border-white box-border mx-1 rounded-md grid place-items-center" aria-label="Driving Plates">
+                    <nav class="flex flex-wrap justify-center pt-[18px]">
+                        <a href="http://www.youtube.com/channel/UCCulGI986t_GquAJVq8eS6w" target="_blank" class="w-10 h-[2.1rem] border-2 mb-2 border-white box-border mx-1 rounded-md grid place-items-center" aria-label="Driving Plates">
                             <i class="fa-brands fa-youtube relative left-[1.5px]"></i>
                         </a>
-                        <a href="https://vimeo.com/161942412" target="_blank" class="w-10 h-[2.1rem] border-2 border-white box-border mx-1 rounded-md grid place-items-center relative left-[1.75px]" aria-label="Driving Plates">
+                        <a href="https://vimeo.com/161942412" target="_blank" class="w-10 h-[2.1rem] border-2 border-white box-border mb-2 mx-1 rounded-md grid place-items-center relative left-[1.75px]" aria-label="Driving Plates">
                             <i class="fa-brands fa-vimeo-v relative left-[1.5px]"></i>
                         </a>
-                        <a href="https://www.facebook.com/drivingplates" target="_blank" class="w-10 h-[2.1rem] border-2 border-white box-border mx-1 rounded-md grid place-items-center relative left-[1.75px]" aria-label="DrivingPlates.com LLC">
+                        <a href="https://www.facebook.com/drivingplates" target="_blank" class="w-10 h-[2.1rem] border-2 border-white mb-2 box-border mx-1 rounded-md grid place-items-center relative left-[1.75px]" aria-label="DrivingPlates.com LLC">
                             <i class="fa-brands fa-facebook-f relative left-[1.5px]"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/drivingplates-com" target="_blank" class="w-10 h-[2.1rem] border-2 border-white box-border mx-1 rounded-md grid place-items-center" aria-label="David Smith">
+                        <a href="https://www.linkedin.com/company/drivingplates-com" target="_blank" class="w-10 h-[2.1rem] border-2 mb-2 border-white box-border mx-1 rounded-md grid place-items-center" aria-label="David Smith">
                             <i class="fa-brands fa-linkedin-in relative left-[1.5px]"></i>
                         </a>
-                        <a href="https://twitter.com/drivingplates" target="_blank" class="w-10 h-[2.1rem] border-2 border-white box-border mx-1 rounded-md grid place-items-center" aria-label="DrivingPlates.com">
+                        <a href="https://twitter.com/drivingplates" target="_blank" class="w-10 h-[2.1rem] border-2 border-white box-border mb-2 mx-1 rounded-md grid place-items-center" aria-label="DrivingPlates.com">
                             <i class="fa-brands fa-twitter relative left-[1.5px]"></i>
                         </a>
                     </nav>
@@ -61,6 +61,6 @@
 
 <style scoped>
 .email-wrap {
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
 }
 </style>
