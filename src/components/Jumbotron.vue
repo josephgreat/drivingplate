@@ -2,7 +2,7 @@
    <section id="bg-container" class="jumbotron">
     <div class="fixed video-container">
       <video autoplay muted loop class="video">
-        <source src="video/diving.mp4" type="video/mp4" />
+        <source src="/video/diving.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="overlay absolute top-0 left-0 bg-[rgba(20,20,20,.4)]"></div>
@@ -36,7 +36,7 @@ import Navbar from "./Navbar.vue";
 }
 .video {
   max-width: 800px;
-  background: url("video/video-palceholder.png");
+  background: url("/video/video-palceholder.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
