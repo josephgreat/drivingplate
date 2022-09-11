@@ -7,6 +7,7 @@
     </div>
     <navbar />
     <div style="padding-bottom: 25.6312%">&nbsp;</div>
+    <!-- <div class="h-[25vh] sm:h-[40vh] md:h-[65vh] xl:h-[55vh] 2xl:h-[50vh]"></div> -->
     <div
       class="flex justify-end px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 py-4 2xl:max-w-[1700px] 2xl:mx-auto"
     >
