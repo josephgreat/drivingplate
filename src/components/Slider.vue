@@ -29,6 +29,7 @@ export default {
       settings: {
         itemsToShow: 5,
         snapAlign: 'center',
+        autoplay: false,
       },
     };
   },
@@ -41,6 +42,21 @@ export default {
 };
 </script>
 <style>
+.carousel__viewport {
+  overflow: hidden;
+  max-height: 378px;
+}
+li.carousel__slide {
+  width: auto !important;
+  max-width: 20%;
+}
+.carousel_item {
+  height: 100%;
+}
+.carousel_item img {
+  height: 100%;
+  width: auto;
+}
 .carousel .carousel__prev,
 .carousel .carousel__next {
   background: rgba(0, 0, 0, 0.1);

@@ -6,7 +6,7 @@
       ></iframe>
     </div>
     <navbar />
-    <div style="padding-bottom: 25.6312%">&nbsp;</div>
+    <div class="jumbotron-spacer">&nbsp;</div>
     <div
       class="flex justify-end px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 py-4 2xl:max-w-[1700px] 2xl:mx-auto"
     >
@@ -25,27 +25,32 @@ import Navbar from './Navbar.vue';
 <style scoped>
 .jumbotron {
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
+  max-height: 44vw;
+  height: 44vw;
+}
+.jumbotron-spacer {
+  height: calc(100% - 160px);
 }
 .video-container {
   background-color: #7e3a3a;
-  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 44vw;
   z-index: -1;
   pointer-events: none;
   overflow: hidden;
+  max-height: 44vw;
 }
 
 .video-container iframe {
-  width: 4627.2px;
-  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-  min-height: 100vh;
-  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  width: 112vw;
+  height: 50vw;
+  min-height: 50vw;
+  min-width: 100vw;
   position: absolute;
-  top: 37%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: url('/video/video-palceholder.png');
@@ -54,6 +59,9 @@ import Navbar from './Navbar.vue';
   background-attachment: fixed;
   transition: all 0.3s ease;
 }
-
-
+@media (max-width: 640px) {
+  .jumbotron-spacer {
+    height: calc(100% - 145px);
+  }
+}
 </style>
