@@ -25,7 +25,7 @@ import Navbar from './Navbar.vue';
 <style scoped>
 .jumbotron {
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
-  max-height: 44vw;
+  max-height: 725px;
   height: 44vw;
 }
 .jumbotron-spacer {
