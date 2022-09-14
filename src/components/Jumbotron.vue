@@ -29,7 +29,7 @@ import Navbar from './Navbar.vue';
   height: 44vw;
 }
 .jumbotron-spacer {
-  height: calc(100% - 160px);
+  height: calc(100% - 175px);
 }
 .video-container {
   background-color: #7e3a3a;
