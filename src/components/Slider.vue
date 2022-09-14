@@ -1,6 +1,6 @@
 <template>
   <section class="pb-28">
-    <Carousel :autoplay="1000" :wrap-around="false" :settings="settings">
+    <Carousel :autoplay="1200" :wrap-around="false" :settings="settings">
       <Slide v-for="n in 19" :key="n">
         <div class="carousel_item">
           <img class="" :src="`/images/slide${n}.jpg`" loading="lazy" />
@@ -29,7 +29,6 @@ export default {
       settings: {
         itemsToShow: 6,
         snapAlign: 'center',
-        autoplay: false,
       },
     };
   },
