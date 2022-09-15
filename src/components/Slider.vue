@@ -1,7 +1,7 @@
 <template>
   <section class="pb-28">
-    <Carousel :autoplay="2000" :wrap-around="true" :settings="settings">
-      <Slide v-for="n in 19" :key="n">
+    <Carousel :autoplay="1200" :wrap-around="false" :settings="settings">
+      <Slide v-for="n in 183" :key="n">
         <div class="carousel_item">
           <img class="" :src="`/images/slide${n}.jpg`" loading="lazy" />
         </div>
@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       settings: {
-        itemsToShow: 5,
+        itemsToShow: 6,
         snapAlign: 'center',
       },
     };
@@ -41,6 +41,26 @@ export default {
 };
 </script>
 <style>
+.carousel__viewport {
+  overflow: hidden;
+  max-height: 464px;
+  height: 26.3vw;
+}
+.carousel__track{
+  max-height: 100%;
+  height: 100%;
+}
+li.carousel__slide {
+  width: auto !important;
+  height: 100%;
+}
+.carousel_item {
+  height: 100%;
+}
+.carousel_item img {
+  height: 100%;
+  width: auto;
+}
 .carousel .carousel__prev,
 .carousel .carousel__next {
   background: rgba(0, 0, 0, 0.1);

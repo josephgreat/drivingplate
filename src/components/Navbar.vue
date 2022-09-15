@@ -11,7 +11,6 @@
       <button class="sm:hidden" @click="toggleNavbar = !toggleNavbar">
         <i class="fas fa-bars text-white"></i>
       </button>
-      <!-- mobile -->
       <div v-if="toggleNavbar">
         <div
           @click="toggleNavbar = !toggleNavbar"
