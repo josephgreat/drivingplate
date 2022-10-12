@@ -2,7 +2,7 @@
   <header
     class="bg-[#191606] sm:bg-transparent z-10 py-3 lg:pt-3 xl:pt-6 px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 2xl:max-w-[1700px] 2xl:mx-auto flex sm:py-4 justify-between items-center relative"
   >
-    <a href="#" class="w-2/5 md:w-1/4">
+    <a href="#" class="w-1/3 md:w-1/4">
       <img src="../assets/images/logo.png" />
     </a>
     <nav

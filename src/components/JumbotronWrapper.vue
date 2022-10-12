@@ -6,11 +6,11 @@
       class="px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 py-4 2xl:max-w-[1700px] 2xl:mx-auto"
     >
       <h1
-        class="uppercase text-center text-[2rem] font-[600] sm:text-[105px] text-white px-[17px] pb-[2rem] tracking-[0.03em] leading-[1.2em]"
+        class="uppercase text-center text-[2rem] font-medium sm:text-[105px] text-white px-[17px] pb-[2rem] tracking-[0.03em] leading-[1.2em]"
       >
         {{ title }}
       </h1>
-      <form class="py-2" v-if="title === 'library'">
+      <form class="pt-2" v-if="title === 'library'">
         <div class="relative">
           <input
             type="text"
@@ -40,7 +40,7 @@ h1 {
 .bg-img{
   background: var(--bg) fixed;
   background-size: max(100%, 85rem);
-  background-position: 0 10px;
+  background-position: 0 20px;
 }
 @media screen and (min-width: 640px) {
   .bg-img{
