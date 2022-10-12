@@ -39,8 +39,8 @@ h1 {
 }
 .bg-img{
   background: var(--bg) fixed;
-  background-size: max(100%, 85rem);
-  background-position: 0 20px;
+  background-size: max(100%, 75rem);
+  background-position: 0 25px;
 }
 @media screen and (min-width: 640px) {
   .bg-img{
