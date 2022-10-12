@@ -25,11 +25,11 @@ import Navbar from './Navbar.vue';
 <style scoped>
 .jumbotron {
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
-  max-height: 44vw;
+  max-height: 725px;
   height: 44vw;
 }
 .jumbotron-spacer {
-  height: calc(100% - 160px);
+  height: calc(100% - 175px);
 }
 .video-container {
   background-color: #7e3a3a;

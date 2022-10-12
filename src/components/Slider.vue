@@ -1,7 +1,7 @@
 <template>
   <section class="pb-28">
-    <Carousel :autoplay="1000" :wrap-around="false" :settings="settings">
-      <Slide v-for="n in 19" :key="n">
+    <Carousel :autoplay="1200" :wrap-around="false" :settings="settings">
+      <Slide v-for="n in 183" :key="n">
         <div class="carousel_item">
           <img class="" :src="`/images/slide${n}.jpg`" loading="lazy" />
         </div>
@@ -43,11 +43,16 @@ export default {
 <style>
 .carousel__viewport {
   overflow: hidden;
-  max-height: 378px;
+  max-height: 464px;
+  height: 26.3vw;
+}
+.carousel__track{
+  max-height: 100%;
+  height: 100%;
 }
 li.carousel__slide {
   width: auto !important;
-  max-width: 20%;
+  height: 100%;
 }
 .carousel_item {
   height: 100%;
