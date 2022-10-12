@@ -26,27 +26,27 @@
           class="flex flex-col animate-[slidein_.3s_ease-in-out] transition-all duration-300 ease-in-out sm:flex-row p-9 sm:p-0 h-screen sm:h-auto w-[85vw] sm:w-auto bg-[#191606] sm:bg-transparent right-0 top-0 absolute sm:relative text-white uppercase"
         >
           <li
-            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">library</a>
           </li>
           <li
-            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">news</a>
           </li>
           <li
-            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">faq</a>
           </li>
           <li
-            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">contact</a>
           </li>
           <li
-            class="pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">home</a>
           </li>
@@ -77,7 +77,14 @@ export default {
 };
 </script>
 
-<style \>
+<style scoped>
+.nav-link{
+  font-family: Heebo;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .2em;
+}
 @keyframes slidein {
   from {
     right: -100%;
