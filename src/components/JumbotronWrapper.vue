@@ -6,7 +6,7 @@
       class="px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 py-4 2xl:max-w-[1700px] 2xl:mx-auto"
     >
       <h1
-        class="uppercase text-center text-[2rem] font-medium sm:text-[105px] text-white px-[17px] pb-[2rem] tracking-[0.03em] leading-[1.2em]"
+        class="uppercase text-center text-[2rem] font-medium sm:text-[105px] text-white pb-[1.5rem] tracking-[0.03em] leading-[1.2em]"
       >
         {{ title }}
       </h1>

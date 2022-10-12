@@ -23,7 +23,7 @@
           <i class="fas fa-close text-white text-lg"></i>
         </button>
         <ul
-          class="flex flex-col flex-wrap justify-end animate-[slidein_.3s_ease-in-out] transition-all duration-300 ease-in-out sm:flex-row p-9 sm:p-0 h-screen sm:h-auto w-[85vw] sm:w-auto bg-[#191606] sm:bg-transparent right-0 top-0 absolute sm:relative text-white uppercase"
+          class="flex flex-col flex-wrap sm:justify-end animate-[slidein_.3s_ease-in-out] transition-all duration-300 ease-in-out sm:flex-row p-9 sm:p-0 h-screen sm:h-auto w-[85vw] sm:w-auto bg-[#191606] sm:bg-transparent right-0 top-0 absolute sm:relative text-white uppercase"
         >
           <li
             class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
