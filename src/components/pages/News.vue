@@ -63,7 +63,7 @@
                 @click="playVideo = !playVideo"
                 class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 hover:bg-[#2e2e2e] transition duration-300 ease-in-out rounded-md p-2"
               >
-                <img src="../assets/images/play-button.png" />
+                <img src="../../assets/images/play-button.png" />
               </button>
             </div>
           </div>
