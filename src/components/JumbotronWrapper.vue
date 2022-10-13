@@ -4,6 +4,7 @@ import Navbar from "./Navbar.vue";
 const props = defineProps({
   title: String,
   bg: String,
+  bgcolor: String,
 });
 </script>
 <template>
