@@ -46,7 +46,7 @@
             <a href="#">contact</a>
           </li>
           <li
-            class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:ml-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">home</a>
           </li>
