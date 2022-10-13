@@ -1,5 +1,13 @@
+<script setup>
+import Navbar from "./Navbar.vue";
+
+const props = defineProps({
+  title: String,
+  bg: String,
+});
+</script>
 <template>
-  <section class="bg-img bg-no-repeat  bg-left-top" :style="{ '--bg': `url(/images/${bg}.jpg)` }">
+  <section class="bg-img bg-no-repeat bg-fixed" :style="`background-image: url(/bg-img/${bg}.jpg)`">
     <div class="wrapper"></div>
     <navbar />
     <div
@@ -11,34 +19,24 @@
         {{ title }}
       </h1>
       <form class="pt-2" v-if="title === 'library'">
-        <div class="relative">
+        <div class="relative max-w-[50rem] mx-auto">
           <input
             type="text"
             placeholder="Location, Tags, Codes... give it to me"
-            class="w-full text-[#2e2e2e] pl-3 pr-[95px] focus:border-none"
+            class="w-full text-[#2e2e2e] py-[.15rem] pl-3 pr-[95px] focus:border-none"
           />
-          <input type="button" value="Search" class="bg-[#2e2e2e] border border-[#f8f9fa] border-l-[#ced4da] hover:bg-[#f8f9fa] hover:text-[#2e2e2e] transition ease duration-300 cursor-pointer  max-h-full text-[#f8f9fa] absolute right-0 px-3" />
+          <input type="button" value="Search" class="bg-[#2e2e2e] border border-[#f8f9fa] py-[.15rem] border-l-[#ced4da] hover:bg-[#f8f9fa] hover:text-[#2e2e2e] transition ease duration-300 cursor-pointer  max-h-full text-[#f8f9fa] absolute right-0 px-3" />
         </div>
       </form>
       <div v-else class="h-[2.4rem]"></div>
     </div>
   </section>
 </template>
-<script setup>
-import Navbar from "./Navbar.vue";
-
-const props = defineProps({
-  title: String,
-  bg: String,
-});
-</script>
 <style scoped>
 h1 {
   font-family: "TrumpGothicPro", Arial, Helvetica, sans-serif;
- 
 }
 .bg-img{
-  background: var(--bg) fixed;
   background-size: max(100%, 75rem);
   background-position: 0 25px;
 }

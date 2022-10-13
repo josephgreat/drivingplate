@@ -2,8 +2,8 @@
   <header
     class="bg-[#191606] sm:bg-transparent z-10 py-3 lg:pt-3 xl:pt-6 px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0 2xl:max-w-[1700px] 2xl:mx-auto flex sm:py-4 justify-between items-center relative"
   >
-    <a href="#" class="w-1/3 md:w-1/4">
-      <img src="../assets/images/logo.png" />
+    <a href="#" class="w-1/3">
+      <img src="../assets/images/logo.png" class="md:max-w-xs" />
     </a>
     <nav
       class="text-[20px] sm:text-[13px] font-medium tracking-[0.25] leading-7"
@@ -26,27 +26,27 @@
           class="flex flex-col flex-wrap sm:justify-end animate-[slidein_.3s_ease-in-out] transition-all duration-300 ease-in-out sm:flex-row p-9 sm:p-0 h-screen sm:h-auto w-[85vw] sm:w-auto bg-[#191606] sm:bg-transparent right-0 top-0 absolute sm:relative text-white uppercase"
         >
           <li
-            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">library</a>
           </li>
           <li
-            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">news</a>
           </li>
           <li
-            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">faq</a>
           </li>
           <li
-            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">contact</a>
           </li>
           <li
-            class="nav-link pb-2.5 sm:pb-0 sm:mx-3 transition duration-300 ease-linear sm:hover:text-gray-400"
+            class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
             <a href="#">home</a>
           </li>
