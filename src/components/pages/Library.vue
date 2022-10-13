@@ -33,8 +33,8 @@
         </p>
       </section>
       <section class="pb-28 tracking-[.02em] ">
-        <div class="flex justify-between flex-col sm:flex-row">
-          <div class="ml-[40px]">
+        <div class="flex flex-col sm:flex-row">
+          <div class="ml-[40px] w-[30%]">
             <h2 class="uppercase font-extrabold my-5 sm:tracking-[.15em] tracking-[.02em]">
               united states
             </h2>
@@ -137,7 +137,7 @@
               </ul>
             </div>
           </div>
-          <div class="ml-[40px]">
+          <div class="ml-[40px] w-[30%]">
             <h2 class="uppercase font-bold my-5 sm:tracking-[.15em] tracking-[.02em]">
               united kingdom
             </h2>
@@ -243,7 +243,7 @@
               </ul>
             </div>
           </div>
-          <div class="ml-[40px]">
+          <div class="ml-[40px] w-[30%]">
             <h2 class="uppercase font-bold my-5 sm:tracking-[.15em] tracking-[.02em]">
               international
             </h2>
