@@ -1,7 +1,5 @@
 <template>
-  <section class="pb-28">
     <div v-if="playVideo" class="iframe-container">
-      <!-- <iframe class="responsive-iframe" src="https://player.vimeo.com/video/315795892?app_id=122963&wmode=opaque&autoplay=1" title="driving video" allow="fullscreen; autoplay" allowfullscreen></iframe> -->
       <iframe
         src="https://player.vimeo.com/video/315795892?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
         width="640"
@@ -35,7 +33,6 @@
         <img src="../assets/images/play-button.png" />
       </button>
     </div>
-  </section>
 </template>
 <script>
 export default {

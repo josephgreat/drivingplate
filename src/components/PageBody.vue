@@ -4,7 +4,9 @@
       class="max-w-[1700px] mx-auto py-12 px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0"
     >
       <Headline />
-      <DrivingVideo />
+      <section class="pb-28">
+        <DrivingVideo />
+      </section>
       <Features />
       <Slider />
       <Review />
@@ -12,11 +14,11 @@
   </main>
 </template>
 <script>
-import Headline from './Headline.vue';
-import DrivingVideo from './DrivingVideo.vue';
-import Features from './Features.vue';
-import Slider from './Slider.vue';
-import Review from './Review.vue';
+import Headline from "./Headline.vue";
+import DrivingVideo from "./DrivingVideo.vue";
+import Features from "./Features.vue";
+import Slider from "./Slider.vue";
+import Review from "./Review.vue";
 export default {
   components: {
     Headline,

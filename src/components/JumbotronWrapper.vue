@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-img bg-no-repeat  bg-left-top" :style="{ '--bg': `url(/images/${bg}.jpg)` }">
+  <section class="bg-img bg-no-repeat  bg-left-top" :style="{ '--bg': `url(/images/${bg}.jpg)`, '--bgcolor': `${bgcolor ? bgcolor : '#7e3a3a'}` }">
     <div class="wrapper"></div>
     <navbar />
     <div
@@ -30,6 +30,7 @@ import Navbar from "./Navbar.vue";
 const props = defineProps({
   title: String,
   bg: String,
+  bgcolor: String,
 });
 </script>
 <style scoped>
@@ -39,6 +40,7 @@ h1 {
 }
 .bg-img{
   background: var(--bg) fixed;
+  background-color: var(--bgcolor);
   background-size: max(100%, 75rem);
   background-position: 0 25px;
 }
