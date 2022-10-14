@@ -231,16 +231,16 @@ const updateActive = (n) => {
   if (index === carouselImgs.length) index = 0;
   else index = n ? n - 1 : index;
   carouselSlide.style.backgroundImage = `url(${carouselImgs[index].src})`;
-  for (img in carouselImgs) {
-    img.style.filter = "contrast(.5)"
+  for (let i = 0; i < carouselImgs.length; i++) {
+    carouselImgs[i].style.filter = "contrast(.5)"
   }
   carouselImgs[index].style.filter = 'unset'
 
   index++;
 };
-for (img in carouselImgs) {
-  img.onclick = () => setTimeout(updateActive(img.dataset.index), 1000)
-}
+for (let i = 0; i < carouselImgs.length; i++) {
+    carouselImgs[i].onclick = () => updateActive(n);
+  }
 setInterval(updateActive, 5000);
 </script>
 <style scoped>
