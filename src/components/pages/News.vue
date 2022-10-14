@@ -179,7 +179,7 @@
           </p>
           <div class="my-8">
             <div class="carousel-container overflow-hidden">
-              <div class="carousel-slide aspect-[750/563] mb-3 animation-fade transition duration-[1s] ease" :style="`background-image: url(${active.src}); background-size: 100% `">
+              <div class="carousel-slide aspect-[750/563] mb-3 animation-[fade] transition duration-[1s] ease" style="background-size: 100%" >
                 <!-- <img :src="active.src" alt="" class="w-full " /> -->
               </div>
               <div
@@ -190,7 +190,6 @@
                   :key="n"
                   :src="`/newsImg/carousel${n}.jpg`"
                   :alt="`carousel${n}`"
-                  @click="updateActive(n)"
                   :style="`left: ${(n - 1) * 7}rem`"
                   :data-index="n" 
                   class="carousel-img absolute w-[7rem] block cursor-pointer contrast-50"
@@ -211,16 +210,38 @@
   </div>
 </template>
 <script setup>
-import { ref, reactive } from "vue";
+import { ref, reactive, onMounted } from "vue";
 import JumbotronWrapper from "../../components/JumbotronWrapper.vue";
 import DrivingVideo from "../../components/DrivingVideo.vue";
-const carouselImgs = document.querySelectorAll(".carousel-img");
+
+const active = reactive({ index: 1, src: '' });
+let carouselImgs;
+let carouselSlide;
+let index = 0;
+
+onMounted(() => {
+  carouselImgs = document.querySelectorAll(".carousel-img");
+  carouselSlide = document.querySelector(".carousel-slide");
+  carouselSlide.style.backgroundImage = `url(${carouselImgs[index].src})`;
+  carouselImgs[index].style.filter = 'unset'
+
+})
 const playVideo = ref(false);
-const active = reactive({ index: 1, src: carouselImgs[0] });
-const updateActive = (index) => {
-  active.src = `/newsImg/carousel${index}.jpg`;
-  console.log(active);
+const updateActive = (n) => {
+  if (index === carouselImgs.length) index = 0;
+  else index = n ? n - 1 : index;
+  carouselSlide.style.backgroundImage = `url(${carouselImgs[index].src})`;
+  for (img in carouselImgs) {
+    img.style.filter = "contrast(.5)"
+  }
+  carouselImgs[index].style.filter = 'unset'
+
+  index++;
 };
+for (img in carouselImgs) {
+  img.onclick = () => setTimeout(updateActive(img.dataset.index), 1000)
+}
+setInterval(updateActive, 5000);
 </script>
 <style scoped>
 .iframe-container {
@@ -246,5 +267,13 @@ const updateActive = (index) => {
   margin: 150px auto 80px;
   width: max(50%, 240px);
   background-color: #bdbdbd;
+}
+.carousel-slide{
+  transition: background-image 1s ease;
+}
+@keyframes fade {
+  from{opacity: .4;}
+  to{opacity: 1;}
+  
 }
 </style>

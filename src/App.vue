@@ -1,9 +1,9 @@
 <template>
   <div>
-    <!-- <news /> -->
+    <news />
     <!-- <contact-us/> -->
     <!-- <faq-page/> -->
-    <library/>
+    <!-- <library/> -->
     <!-- <landing-page/> -->
     <footer-section />
   </div>
