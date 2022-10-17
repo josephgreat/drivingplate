@@ -5,7 +5,7 @@ const props = defineProps({
 });
 </script>
 <template>
-  <article class="article mb-[100px] first:before:content-none before:contents[''] before:sm:min-w-[240px] before:sm:w-1/2 before:bg-[#bdbdbd] before:h-[1px] before:block before:mt-[70px] before:mx-auto before:mb-[50px] before:w-3/4">
+  <article class="article mb-[150px] first:before:content-none before:contents[''] before:sm:min-w-[240px] before:sm:w-1/2 before:bg-[#bdbdbd] before:h-[1px] before:block before:mt-[90px] before:mx-auto before:mb-[130px] before:w-3/4">
     <header>
       <h2
         class="uppercase text-center text-[67px] leading-[3em] tracking-[.075em]"
