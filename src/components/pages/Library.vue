@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#2e2e2e]">
-    <JumbotronWrapper bg="librarybg" title="library" bgcolor="transparent" />
+    <JumbotronWrapper bg="librarybg" title="library" bgcolor="transparent" bgpos="0 25px" />
     <main
       class="max-w-[1700px] mx-auto py-12 px-4 sm:px-12 md:px-16 lg:px-20 xl:px-[100px] 2xl:px-0"
     >

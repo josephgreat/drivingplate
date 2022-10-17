@@ -5,10 +5,11 @@ const props = defineProps({
   title: String,
   bg: String,
   bgcolor: String,
+  bgpos: String,
 });
 </script>
 <template>
-  <section :class="`bg-img bg-no-repeat bg-fixed`" :style="`background-image: url(/bg-img/${bg}.jpg); background-color: ${bgcolor ? bgcolor : '#7e3a3a'}`">
+  <section :class="`bg-img bg-no-repeat bg-fixed`" :style="`background-image: url(/bg-img/${bg}.jpg); background-color: ${bgcolor ? bgcolor : '#7e3a3a'}; background-position: ${bgpos ? bgpos : 'unset'};`">
     <div class="wrapper"></div>
     <navbar />
     <div
@@ -39,7 +40,6 @@ h1 {
 }
 .bg-img{
   background-size: max(100%, 75rem);
-  background-position: 0 25px;
 }
 @media screen and (min-width: 640px) {
   .bg-img{
