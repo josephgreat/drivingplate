@@ -170,7 +170,7 @@
             />
             <library-links
               title="washington, D.C."
-              :links="['georgeto', 'washington, D.C.']"
+              :links="['Georgetown', 'washington, D.C.']"
             />
             <library-links
               title="wyoming"
