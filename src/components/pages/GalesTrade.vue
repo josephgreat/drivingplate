@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import {onMounted} from "vue";
     let carouselIndicators, carouselItems, carouselInner;
     let currentIndex = 0;
@@ -114,4 +114,4 @@ main{
     letter-spacing: 1 !important;
 
 }
-</style>
+</style> -->
