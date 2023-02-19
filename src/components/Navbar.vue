@@ -28,7 +28,9 @@
           <li
             class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
-            <a href="#">library</a>
+            <!-- <a href="#">library</a> -->
+            <RouterLink to="/library">library</RouterLink>
+
           </li>
           <li
             class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
@@ -38,17 +40,20 @@
           <li
             class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
-            <a href="#">faq</a>
+            <!-- <a href="#">faq</a> -->
+            <RouterLink to="/faq">faq</RouterLink>
           </li>
           <li
             class="nav-link pb-2.5 sm:pb-0 sm:mx-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
-            <a href="#">contact</a>
+            <!-- <a href="#">contact</a> -->
+            <RouterLink to="/contact">contact</RouterLink>
           </li>
           <li
             class="nav-link pb-2.5 sm:pb-0 sm:ml-6 transition duration-300 ease-linear sm:hover:text-gray-400"
           >
-            <a href="#">home</a>
+            <!-- <a href="#">home</a> -->
+            <RouterLink to="/">home</RouterLink>
           </li>
         </ul>
       </div>
@@ -57,7 +62,12 @@
 </template>
 
 <script>
+import { RouterLink, RouterView } from 'vue-router'
+
 export default {
+  component: {
+    RouterLink, RouterView
+  },
   data() {
     return {
       toggleNavbar: false,
